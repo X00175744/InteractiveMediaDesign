@@ -1,27 +1,17 @@
 body {
     /* background-color: #e6ffff; */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
-/* #navdiv{
-    overflow:visible;
-    overflow-wrap: break-word;
-    text-wrap:stable;
-} */
+
 .navbar{
     background-image: linear-gradient(rgba(6, 11, 30, 1), rgba(6, 11, 30, 0.4));
     /* #212529, #6c757d  this gradient goes from bootstrap-dark to bootstrap-secondary rgba allows for transparency*/
-    /* keeps components from the edges of the nav */
     height:100%;
     width:7%;
     /* height:10%; */
     border-bottom-right-radius:30%;
     border-top-right-radius:30%; 
-    /* box-shadow: 0px 4px 10px 0px #424643; */
     position: fixed;
-    /* overflow: auto;
-    overflow-wrap: break-word;
-    text-wrap:stable; */
 }
 
 h2{
@@ -37,7 +27,7 @@ ul{
 .listSpace{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ddd; /* Add a border between subjects */
+    border-bottom: 1px solid #C3D1D1; /* Line between each thing */
     padding: 1rem 0;
 }
 
@@ -62,15 +52,9 @@ ul{
 }
 
 .nav-item:hover{
-    opacity:100%;
+    opacity:100%; /*looks like its lighting up*/
     transition: 0.2s;
 }
-
-
-/* .line-light{
-    margin:5em;
-    color: antiquewhite;
-} */
 
 .imgcontainer {
     position: relative;
