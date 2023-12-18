@@ -3,15 +3,594 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap link -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!-- css link --> 
     <link rel = "stylesheet" href = "css/style.css">
-    <title>Luke Geraghty</title>
+    <title>Luke Geraghty Portfolio</title>
 </head>
-<body>
-    <nav class = "navbar bg-dark">
-        <a href="home.html">Home</a>
+<body data-spy="scroll" data-target="#nav" class = "" data-bs-offset="50">
+    <nav id = "nav" class = "navbar fixed-top">
+        <div class = "container text-wrap">
+            <ul class = "nav container-fluid text-center">
+                <li class = "nav-item">
+                    <a class = "" href="home.html">Home</a>
+                </li>
+                <li class = "nav-item">
+                    <a class = "" href="#Ed">Education</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "" href="#project">Project</a>
+              </li>
+                <li class = "nav-item">
+                  <a class = "" href="#details">Experience</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "" href="#interests">My Interests</a>
+              </li>
+                <li class = "nav-item">
+                    <a class = "" href="#contact">Contact Me</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "" href="detail.html">Bootstrap Used</a>
+              </li>
+                <!-- <li class = "nav-item">
+                  <a class = "" href="#">Back to Top</a>
+                </li> -->
+            </ul>
+        </div>
     </nav>
+
+    <div class="imgcontainer pb-3">
+      <img class="" src="img/HK Blue Lake bckgrnd cropped.png" alt="Serene Blue Lake" width="100%" />
+      <div class="overlaytext">
+          <div class = "row m-2">
+              <h2 class="text-center m-3">Luke Geraghty</h2>
+              <hr>
+          </div>
+          
+          <div class = "row">
+              <div class = "col-3 m-4">
+                  <a href = "https://www.linkedin.com/in/lukedangergeraghty" target = "blank"> <!-- target = blank opens a link in a new tab.  -->
+                    <img class = "img-fluid img-thumbnail"  src="img/student_picture.jpeg" alt="a striking photo of Luke Geraghty">
+                  </a>
+              </div>
+              <div class = "col m-4">
+                <p>Undergraduate Software Developer <br>
+                   Student at Technological University Dublin
+                  </p>
+                  <p>
+                    Contact Me: <br>
+                  <a  class="links hover" href = "https://www.linkedin.com/in/lukedangergeraghty" target = "blank">
+                    Linkedin    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <br>
+                  <a  class="links hover" href = "" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    Email    <i class="bi bi-envelope-at-fill"></i>
+                  </a>
+                  
+                </p>
+              </div>
+             
+          </div>
+         
+      </div>
+    </div>
+
+        <div id="Ed" class = "container pb-3">
+          <h2>Education</h2>
+          <hr class="">
+          <h4>Technological University Dublin (2020 - 2024)</h4>
+          <p>Computing with Software Development | Level 8 Degree</p>
+          <div class="btn-group" role="group">
+            <a class="btn btn-outline-info" data-toggle="collapse" href="#fourth" role="button" aria-expanded="true" aria-controls="fourth">4th Year</a>
+            <a class="btn btn-outline-info" data-toggle="collapse" href="#third" role="button" aria-expanded="false" aria-controls="third">3rd Year</a>
+            <a class="btn btn-outline-info" data-toggle="collapse" href="#second" role="button" aria-expanded="false" aria-controls="second">2nd Year</a>
+            <a class="btn btn-outline-info" data-toggle="collapse" href="#first" role="button" aria-expanded="false" aria-controls="first">1st Year</a>
+         
+          </div>
+             <div class="row">
+
+            <div class="col">
+              <div class="collapse multi-collapse show" id="fourth">
+                <div class="card card-body mt-3">
+                    <ul class="subjectList">
+                      <h5 class="text-center">4th Year Results</h5>
+                      <hr>
+                      <li class="pb-2 listSpace">
+                        <span>Interactive Media Design</span>
+                        <span>TBC</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Enterprise Performance Architecture</span>
+                        <span>TBC</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Applied Machine Learning</span>
+                        <span>TBC</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Enterprise App Development</span>
+                        <span>TBC</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Information Management</span>
+                        <span>TBC</span>
+                      </li>
+                    </ul>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="collapse multi-collapse" id="third">
+                <div class="card card-body mt-3">
+                  <div class = "col">
+                    <ul class="subjectList">
+                      <h5 class="text-center">3rd Year Results</h5>
+                      <hr>
+                      <li class="pb-2 listSpace">
+                        <span>Server-side Web Development</span>
+                        <span>B</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Operating Systems</span>
+                        <span>C</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Cloud Service and Distributed Computing</span>
+                        <span>C</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Big Data Technologies</span>
+                        <span>C</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Data Structures and Algorithms</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Data Analysis</span>
+                        <span>B</span>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="collapse multi-collapse" id="second">
+                <div class="card card-body mt-3">
+                  <div class = "col">
+                    <ul class="subjectList">
+                      <h5 class="text-center">2nd Year Results</h5>
+                      <hr>
+                      <li class="pb-2 listSpace">
+                        <span>Client Side Web Development</span>
+                        <span>B</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Discrete Mathematics 2</span>
+                        <span>A</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Advanced Database Technologies</span>
+                        <span>B</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Network Fundamentals</span>
+                        <span>B</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Software Quality Assurance and Testing</span>
+                        <span>B</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Software Development 3</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Information Security</span>
+                        <span>B</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Database Admin and Analysis</span>
+                        <span>B</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Management Science</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Routing and Switching Essentials</span>
+                        <span >B</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Software Development 4</span>
+                        <span >B</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Project</span>
+                        <span >A</span>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col">
+              <div class="collapse multi-collapse" id="first">
+                <div class="card card-body mt-3">
+                  <div class = "col">
+                    <ul class="subjectList">
+                      <h5 class="text-center">1st Year Results</h5>
+                      <hr>
+                      <li class="pb-2 listSpace">
+                        <span>Critical Skills Development</span>
+                        <span>A</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Discrete Mathematics 1</span>
+                        <span>B</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Business and Information Systems</span>
+                        <span>A</span>
+                      </li>
+                      <li class="pb-2 listSpace">
+                        <span>Visual Design and User Experience</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Computer Architecture</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Software Development 1</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Operating Systems Fundamentals</span>
+                        <span>B</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Database Fundamentals</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Statistics</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Social Media Communications</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Systems Analysis</span>
+                        <span>A</span>
+                      </li>
+                      <li class="listSpace">
+                        <span>Software Development 2</span>
+                        <span>B</span>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+          </div>
+
+        </div>
+        <div id="project" class="container pb-3">
+          <h2>Project</h2>
+          <hr>
+          <h4>Second Year</h4>
+          <p>
+            In 2nd year, I was tasked with creating a mock e-retail platform. I was assigned to a team with two others, Jason Fung
+            and Alan Byrne. Both talented programmers. Together, we created GTU, Gamer Time Universal, a platform that showcased new
+            game titles for competitive prices. Of course, we weren't actually selling anything but it had all the functionality to make
+            you think it did. The project was built in Python, using the Django framework.
+          </p>
+          <p>
+            We split up the tasks amongst ourselves. By the end of the project, I had contributed the following functionalities:
+
+            Display Products
+            Add Products
+            Categories
+            Product Detail
+            Search Products
+            Order Log Functionality
+            Product Review
+            As well as UI styling
+
+            Of course, we all helped each other out when we needed to. It wasn't as if we worked in isolated silence, after all. In the end,
+            we created a website that had full CRUD functionality for users, a home page with featured products, a "massive savings" tab 
+            that highlighted games whose price had fallen, could filter games based on both price and genre, could display information on
+            each game, allow you to add a product to your basket (only if you were logged in), check out and pay using Stripe, check previous
+            orders using order logs, leave reviews with ratings and edit those reviews later.
+
+            It was an in-depth project that took a lot of hard work and earned us an A.
+        
+          </p>
+
+        </div>
+
+
+        <div id ="details" class ="container pb-3">
+          <h2>Experience</h2>
+          <hr>
+            <div class="card">
+                <div class="card-header" id="header">
+                    <button class="btn nav-item m-0" data-toggle="collapse" data-target="#beacon" aria-expanded="true" aria-controls="beacon">
+                        Beacon Hospital (2020-2022)
+                    </button>
+                </div>
+                <div id="beacon" class="collapse show" aria-labelledby="header" data-parent="#details">
+                    <div class="card-body">
+                      <p>
+                        I worked as a Patient Services Administrator in the Beacon Hospital for two years. My job was to manage patient appointments, 
+                        register patients and offer guidance where necessary. Through this job, I interacted daily with a live hospital system
+                        and database, as well as developed my people skills by talking to patients for registration, reassuring those who were 
+                        nervous and explaining details of procedures, as well as communicating with my team and other teams we worked with. 
+                        For instance, in radiology, not only do you need to communicate with others working directly with you, but also with the radiology
+                        team performing the scans and procedures, who need you to correctly prepare patients for procedures with consent forms and wristbands. 
+                      </p>
+                      <p>
+                        I got a wide range of experience working in the Beacon, as I moved from department to department. All in all, I worked in Day Unit, 
+                        Radiology, Emergency Department, Urology and Endoscopy. Each department handles patients and patient information differently, 
+                        depending on the nature of the procedures. From this position, I learned to be adaptable and react quickly. I also developed my 
+                        people skills, as well as broadening my experience with computer systems.
+                      </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header" id="header2">
+                    <button class="btn collapsed nav-item m-0" data-toggle="collapse" data-target="#openjaw" aria-expanded="false" aria-controls="openjaw">
+                        OpenJaw Technologies (2023-2023)
+                    </button>
+                </div>
+                <div id="openjaw" class="collapse" aria-labelledby="header2" data-parent="#details">
+                    <div class="card-body">
+                      <p>
+                     As part of my third year, I interned in OpenJaw Technologies for nine months beginning in February 2023. OpenJaw Technologies specialises in 
+                     travel technology. They develop software that allows airlines to manage and display accommodation information from suppliers, such as Expedia.
+                     While I was there I got a lot of valuable experience working in the tech industry. I got well acquainted with Java, the language of choice
+                     for OpenJaw. Not only did I learn about how Java is used now, but also how it developed. I worked primarily on a content loader for a supplier
+                     that was in need of updating. While some files were written in older Java, this content loader was old enough that some files were written
+                     in Groovy, an old Java offshoot language that got reintegrated into Java 8. When working with this, and figuring out what Groovy was and how
+                     to read it, I got the chance to ask why Groovy was good at the time, and why it is no longer being used. Why it was made obselete and what
+                     modern languages do better. 
+                      </p>
+                      <p>
+                        I got much valuable experience working with OpenJaw, but most importantly to me, I got to see what a tech sector position is like and what 
+                        that means for me and my career going forward.
+                      </p>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="interests" class = "container pb-3">
+          <h2>Interests</h2>
+          <hr>
+          <div class="card">
+            <div id="interest1">
+                <button class="btn m-0 card-header accordion" data-toggle="collapse" data-target="#art" aria-expanded="true" aria-controls="art">
+                  <h4 class="iconSpace">
+                    <span>
+                      Art and Graphics
+                      <i class="bi bi-palette"></i>
+                     </span>
+                    <span><i class="bi bi-plus-lg"></i></span>
+                    
+                   </h4> 
+                 </button>
+            </div>
+            <div id="art" class="collapse show" aria-labelledby="header" data-parent="#interests">
+                <div class="card-body">
+                  <p>I've had an interest in art from a young age. My grandmother instilled this in me. Given that she enjoyed painting herself, 
+                    it served as a way for us to connect. I carried it through most of my life, taking Art in secondary school, where I learned 
+                    more about it as a subject. I learned what I do and don't like, namely, art theory. I found that, while I enjoyed the process
+                    of drawing, I had little interest for the minute details and terminology. I valued the process of creating more than the 
+                    history of the subject.
+                  </p>
+                  <p>
+                    I began to explore the idea of art in a digital medium, which, in turn, led to my interest in graphic design. I taught myself
+                    the ins and outs of drawing software as well as editing software, and had fun messing around with photos or drawing on
+                    the computer. This helped to nurture my interest in computing as a whole, I believe.
+                  </p>
+                </div>
+            </div>
+
+        </div>
+    
+        <div class="card">
+            <div id="interest2">
+                <button class="card-header accordion btn collapsed m-0" data-toggle="collapse" data-target="#gaming" aria-expanded="false" aria-controls="gaming">
+                  <h4 class="iconSpace">
+                    <span>
+                      Gaming
+                      <i class="bi bi-controller"></i>
+
+                    </span>
+                    <span><i class="bi bi-plus-lg"></i></span>
+                    
+                   </h4> 
+                </button>
+            </div>
+            <div id="gaming" class="collapse" aria-labelledby="interest2" data-parent="#interests">
+                <div class="card-body">
+                  <p>
+                 For as long as I can remember, gaming has been an interest of mine. When I was younger, my brothers introduced me to it with the 
+                 Playstation 2. It was a hobby we shared and spent much time pursuing. As I grew older, I found friends who shared this hobby and,
+                 through them, I found new ways to enjoy gaming. I discovered strategy games, which quickly became one of my favourite genres.
+                 I discovered the social aspects of online play, and that gaming can be used a means to keep in contact. Even when abroad, we could
+                 always hop on for a quick game of Civilisation V or Project Zomboid. In that way, gaming has been a great comfort to me through my life,
+                 and has been a way for me to better appreciate the people around me. It's a hobby I don't intend to drop anytime soon.
+                  </p>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+          <div id="interest3">
+              <button class="card-header accordion btn collapsed m-0" data-toggle="collapse" data-target="#write" aria-expanded="false" aria-controls="write">
+                <h4 class="iconSpace">
+                  <span>
+                    Writing
+                    <i class="bi bi-vector-pen"></i>
+                  </span>
+                  <span><i class="bi bi-plus-lg"></i></span>
+                  
+                 </h4> 
+              </button>
+          </div>
+          <div id="write" class="collapse" aria-labelledby="interest2" data-parent="#interests">
+              <div class="card-body">
+                <p>
+               Compared to the previous two, this hobby is a more recent one. I discovered a joy for Dungeons and Dragons through a friend of
+               mine a few years ago, and found I had a knack for being the Dungeon Master, the one to lead each game. I particularly enjoyed
+               writing new storylines for my players to interact with, excited to see how they would react and what they would do or say.
+                </p>
+                <p>
+                  From this came a new hobby, writing. I found that one of my favourite parts of playing DnD, other than actually playing,
+                  was writing worlds for players to explore. It occurred to me that I could do so beyond the confines of a DnD game. I could
+                  try making a world to base stories in. I'd read books from an early age, and had recently finished the Dune series when I decided
+                  to lay the groundwork for a setting to place my first story in. I found I enjoyed the process of writing, thinking through the 
+                  consequences of different story elements and discussing it with others. All in all, it's a hobby I hope to explore more in the future.
+                </p>
+              
+              </div>
+          </div>
+      </div>
+
+    
+          <!-- <div class="card">
+            <div class="card-body">
+              
+              <p>I've had an interest in art from a young age. My grandmother instilled this in me. Given that she enjoyed painting herself, 
+                it served as a way for us to connect. I carried it through most of my life, taking Art in secondary school, where I learned 
+                more about it as a subject. I learned what I do and don't like, namely, art theory. I found that, while I enjoyed the process
+                of drawing, I had little interest for the minute details and terminology. I valued the process of creating more than the 
+                history of the subject.
+              </p>
+              <p>
+                I began to explore the idea of art in a digital medium, which, in turn, led to my interest in graphic design. I taught myself
+                the ins and outs of drawing software as well as editing software, and had fun messing around with photos or drawing on
+                the computer. This helped to nurture my interest in computing as a whole, I believe.
+              </p>
+            </div> -->
+          
+          
+
+        </div>
+        <div id = "contact" class="container pb-3">
+          <h2>Contact Me 
+            <button type="button" class="btn badge rounded-pill btn-info" data-bs-toggle="modal" data-bs-target="#contactModal">
+            Talk to Me
+          </button>
+          </h2>
+          
+          <hr>
+            <div class = "rounded card">
+                <div class = "row">
+                    <div class = "col m-4">
+                      <h3>
+                      <a class="text-dark text-decoration-underline" href = "https://www.linkedin.com/in/lukedangergeraghty" target = "blank">
+                        <i class="bi bi-linkedin"></i> LinkedIn:   
+                      </a>     
+                      </h3>
+                                
+                    </div>
+                    <div class = "col m-4">
+                      <h3 class="text-dark text-decoration-underline">
+                        <i class="bi bi-envelope-at-fill "></i> Email   
+                      </h3>
+                                
+                    </div>
+                   
+                </div>
+                <div class="row">
+                  <div class="col m-4">
+                    <h4>
+                      <a class="text-dark hover" href="https://www.linkedin.com/in/lukedangergeraghty"> 
+                        www.linkedin.com/in/lukedangergeraghty
+                      </a>
+                    </h4>
+                  </div>
+                  <div class="col m-4">
+                    <h4>
+                      lhgeraghty@gmail.com
+                    </h4>
+
+                  </div>
+                </div>
+          </div>
+    
+          <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Contact Me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                  <form action="" method="post">
+                    <label class="badge text-dark" for="name" >Name: </label>
+                  <input class = "form-control" id="name" placeholder="Your Name" type="text"  name="text" required>
+                  <label class="badge text-dark" for="email" >Email: </label>
+                  <input class = "form-control" id="email" placeholder="Your Email" type="email"  name="text" required>
+                    <br>
+                  <input class = "formspacing form-control form-control-lg" placeholder="What would you like to say?" type="text" name="text"
+                  role="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                  data-bs-placement="right" data-bs-content="Thanks for reaching out! I look forward to hearing from you." required>
+
+                  <button class = "mt-3 btn btn-outline-info w-100" type="submit">Submit</button>
+
+                  </form>
+
+                </div>
+        
+              </div>
+            </div>
+          </div>
+
+        </div>
+      
+
+       
+
+        
+
+    
+    
+    
+        <!-- <div class="spinner-grow text-warning" role="status">
+              <span class="sr-only">One Moment...</span>
+            </div> 
+          this loading spinner needs a bit of javascript to toggle its visibility-->
+
+  <script src="scripts/script.js"></script>         
 </body>
 </html>
